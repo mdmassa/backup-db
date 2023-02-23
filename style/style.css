@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Poppins-Bold, Poppins-Regular;
+    src: url("../fonts/Poppins-Bold.ttf"), url("../fonts/Poppins-Regular.ttf");
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body {
+    margin: auto;
+    color: #FFFFFF;
+    background-color: #ffffff;
+}
+
+.btn1 {
+    border: none;
+    font-family: Poppins-Bold;
+    color: #FFFFFF;
+    background: #222EA1;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.btn1:hover {
+    opacity: 0.8;
+}
+
+.encontre-eventos {
+    font-family: Poppins-Bold;
+    color: #222EA1;
+    height: 100vh;
+}
+
+.encontre-eventos h1 {
+    font-family: Poppins-Bold;
+    font-size: 50pt;
+}
+
+.fig-1 {
+    position: absolute;
+    top: 1320px;
+    left: 450px;
+    width: 400px;
+}
+
+.fig-2 {
+    position: absolute;
+    top: 1320px;
+    left: 1050px;
+    width: 400px;
+}
+
+.home-desc {
+    font-family: sans-serif;
+    font-size: 15pt;
+    position: absolute;
+    top: 575px;
+    left: 180px;
+    z-index: 1;
+    width: 50vw;
+}
+
+.home-title {
+    font-family: Poppins-Bold;
+    color: #FFFFFF;
+    position: absolute;
+    top: 350px;
+    left: 180px;
+    font-size: 45pt;
+    line-height: 10px;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+.logo-container {
+    background: #FFFFFF;
+}
+
+main {
+    background: url("bg_home.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+    width: 99.2vw;
+}
+
+.main-style {
+    position: absolute;
+    background-color: #000000;
+    top: 204px;
+    height: 84.5vh;
+    width: 99.2vw;
+    opacity: 0.5;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 140px;
+    background: #222EA1;
+    height: 8vh;
+    width: 99.2vw;
+    justify-content: space-around;
+}
+
+.nav-list {
+    font-family: sans-serif;
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-top: 9px;
+    margin-right: 50px;
+}
+
+.navbar-spacing {
+    width: 900px;
+}
