@@ -39,5 +39,45 @@
             </nav>
         </div>
     </header>
+
+    <div class="cadastro">
+        <div class="cadastrar-icon">
+            <img height="70px" src="./img/icon_instituicao_placeholder.png" />
+        </div>
+        <div class="cadastrar-titulo">
+            <h1>Cadastrando<br />
+                instituição</h1>
+                <br />
+        </div>
+
+        <form action="config.php" method="post">
+            <div class="box-cadastrar-instituicao">
+                <label for="cnpj">CNPJ: *</label><br />
+                <input type="text" name="cnpj" placeholder="Digite o CNPJ da instituição..." id="cnpj" class="input-cnpj" required>
+                <br />
+                <br />
+                <label for="nome-instituicao">Nome instituição: *</label><br />
+                <input type="text" name="nome-instituicao" placeholder="Digite o nome da instituição..." id="nome-instituicao" class="input-nome" required>
+                <br />
+                <br />
+                <label for="endereco">Endereço: *</label><br />
+                <input type="text" name="endereco" placeholder="Digite o endereço da instituição..." id="endereco" class="input-endereco" required>
+                <br />
+                <br />
+                <label for="senha">Senha: *</label>
+                <label for="senha-check" class="repetir-senha">Repetir senha: *</label><br />
+                <input type="password" name="senha" placeholder="Digite uma senha..." id="senha" class="input-senha" required>
+                
+                <input type="password" name="senha-check" placeholder="Repita a senha..." id="senha-check" class="input-senha" required>
+                <br />
+                <br />
+                <button class="btn3" type="submit" name="cadastrar-instituicao" id="cadastrar-instituicao">Cadastrar</button>
+                <button class="btn3">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <div class="cadastrar-banner">
+        <img height="800px" src="./img/5.png" />
+    </div>
 </body>
 </html>
