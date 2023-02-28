@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brainstorm Eventos - Cadastrar Instituição</title>
+    <script src="http://localhost:5500/script/script.js"></script>
+    <link rel="stylesheet" type="text/css"  href="./style/style.css" />
+    <link rel="icon" type-"image/x-icon" href="./img/favicon.ico">
+
+</head>
+<body>
+    <header>
+        <div class="logo-container" id="inicio">
+            <a class="logo" href="/"><center><img height="140px" src="http://localhost:5500/img/logo.png" /></a></center>
+        </div>
+
+        <div class="navbar-container"> 
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a href="/">Início</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#encontre-eventos">Encontre eventos</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#produtor">Seja um produtor</a>
+                    </li>
+
+                    <div class="navbar-spacing"></div>
+
+                    <li>
+                        <a href="/">Login</a> | <a href="./cadastro-instituicao.html">Cadastre-se</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="procure-instituicao">
+        <div class="procure-icon">
+            <img height="70px" src="./img/icon_busca.png" />
+        </div>
+        <div class="procure-titulo">
+            <h1>Procure uma<br />
+                instituição</h1>
+        </div>
+
+        <form action="" method="">
+            <div class="box-procure-instituicao">
+                <label for="nome-instituicao">Nome da Instituição:</label>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                <label for="cnpj">CNPJ:</label>
+                <br />
+                <input type="text" name="nome-instituicao" placeholder="Digite o nome da instituição..." id="nome-instituicao" class="input-nome">
+                ㅤㅤ
+                <input type="text" name="cnpj" placeholder="Digite o CNPJ da instituição..." id="cnpj" class="input-cnpj">
+                <br />
+                <br />
+                <label for="endereco">Endereço:</label><br />
+                <input type="text" name="endereco" placeholder="Digite o endereço da instituição..." id="endereco" class="input-endereco">
+            </div>
+
+            <div class="btns-filtro-instituicao">
+                <button class="btn3" type="submit" name="filtrar-instituicao" id="filtrar-instituicao">Filtrar</button>
+                <button class="btn3">Limpar</button>
+            </div>
+        </form>
+
+        <div class="resultados-busca">
+            <span id="res-instituicao">
+                Nenhum resultado encontrado.
+            </span>
+        </div>
+    </div>
+    
+</body>
+</html>
