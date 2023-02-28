@@ -41,6 +41,12 @@ body {
     top: 130px;
 }
 
+.box-procure-instituicao {
+    width: 100vw;
+    position: absolute;
+    top: 130px;
+}
+
 .btn1 {
     border: none;
     font-family: Poppins-Bold;
@@ -50,10 +56,15 @@ body {
     height: 75px;
     width: 350px;
     border-radius: 53px;
+    transition: 0.3s;
 }
 
 .btn1:hover {
     opacity: 0.8;
+    font-size: 23px;
+    height: 80px;
+    width: 355px;
+    transition: 0.3s;
 }
 
 .btn2 {
@@ -82,9 +93,17 @@ body {
 
 .btn3:hover {
     opacity: 0.8;
+    font-size: 18px;
     height: 45px;
     width: 205px;
     transition: 0.5s;
+}
+
+.btns-filtro-instituicao {
+    position: absolute;
+    width: 480px;
+    top: 236px;
+    left: 510px;
 }
 
 .cadastrar-banner {
@@ -220,7 +239,7 @@ html {
     font-size: 12pt;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 20px;
-    width: 207px;
+    width: 196px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -283,15 +302,45 @@ nav a {
     opacity: 0.4;
 }
 
-.repetir-senha {
+.procure-icon {
     position: absolute;
-    left: 235px;
+    top: 15px;
+    left: 20px;
+}
+
+.procure-instituicao {
+    font-family: Poppins-Bold;
+    color: #222EA1;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+}
+
+.procure-titulo {
+    line-height: 30px;
+    position: absolute;
+    width: 250px;
+    top: 5px;
+    left: 100px;
+}
+
+.resultados-busca {
+    font-size: 20pt;
+    position: absolute;
+    width: 800px;
+    top: 340px;
 }
 
 .rodape {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #222EA1;
     height: 80px;
+}
+
+.separador {
+    background-color: #FFFFFF;
+    color: #ffffff;
+    width: 50px;
 }
 
 :target {
