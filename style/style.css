@@ -60,6 +60,7 @@ body {
 }
 
 .btn1:hover {
+    cursor: pointer;
     opacity: 0.8;
     font-size: 23px;
     height: 80px;
@@ -92,6 +93,7 @@ body {
 }
 
 .btn3:hover {
+    cursor: pointer;
     opacity: 0.8;
     font-size: 18px;
     height: 45px;
