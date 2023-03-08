@@ -30,22 +30,18 @@ $total = mysqli_num_rows($rs);
 </head>
 <body>
 <?php
-	// se o número de resultados for maior que zero, mostra os dados
 	if($total > 0) {
-		// inicia o loop que vai mostrar todos os dados
 		do {
 ?>
 			<p><?=$line['nome']?></p>
 <?php
-		// finaliza o loop que vai mostrar os dados
 		} while($line = mysqli_fetch_assoc($rs));
-	// fim do if
 	}
 ?>
 </body>
 </html>
 <?php
-// tira o resultado da busca da memória
+
 mysqli_free_result($rs);
 ?>
 
