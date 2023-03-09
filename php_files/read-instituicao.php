@@ -1,27 +1,26 @@
 <?php
+	if(isset($_POST['filtrar-instituicao'])){
+	    $nome = $_GET['nome'];
+	}
 
-if(isset($_POST['filtrar-instituicao'])){
-    $nome = $_GET['nome'];
-}
+	$host = "localhost";
+	$dbname = "OrgEvento";
+	$username = "root";
+	$password = "";
 
-$host = "localhost";
-$dbname = "OrgEvento";
-$username = "root";
-$password = "";
+	$con = mysqli_connect($host, $username, $password, $dbname);
 
-$con = mysqli_connect($host, $username, $password, $dbname);
+	if (!$con) {
+	    die("Connection failed!" . mysqli_connect_error());
+	}
 
-if (!$con) {
-    die("Connection failed!" . mysqli_connect_error());
-}
+	$sql = "SELECT * FROM Instituicoes WHERE nome LIKE '%$nome%'";
 
-$sql = "SELECT * FROM Instituicoes WHERE nome LIKE '%$nome%'";
+	$rs = mysqli_query($con, $sql);
 
-$rs = mysqli_query($con, $sql);
+	$line = mysqli_fetch_assoc($rs);
 
-$line = mysqli_fetch_assoc($rs);
-// calcula quantos dados retornaram
-$total = mysqli_num_rows($rs);
+	$totalRows = mysqli_num_rows($rs);
 ?>
 
 <html>
@@ -30,26 +29,28 @@ $total = mysqli_num_rows($rs);
 </head>
 <body>
 <?php
-	if($total > 0) {
+	if($totalRows > 0) {
 		do {
 ?>
-			<p><?=$line['nome']?></p>
+			<p>
+				<?php =$line['nome'] ?>
+			</p>
 <?php
 		} while($line = mysqli_fetch_assoc($rs));
 	}
 ?>
 </body>
 </html>
-<?php
 
-mysqli_free_result($rs);
+<?php
+	mysqli_free_result($rs);
 ?>
 
 <?php
-if($rs) {
-    echo "Comando enviado!";
-}
+	if($rs) {
+	    echo "Comando enviado!";
+	}
 
-mysqli_close($con);
+	mysqli_close($con);
 
 ?>
