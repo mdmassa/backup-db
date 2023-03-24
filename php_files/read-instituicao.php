@@ -1,6 +1,6 @@
 <?php
 	if(isset($_POST['filtrar-instituicao'])){
-	    $nome = $_GET['nome'];
+	    $nome = $_GET['nome-instituicao'];
 	}
 
 	$host = "localhost";
@@ -29,15 +29,16 @@
 </head>
 <body>
 <?php
-	if($totalRows > 0) {
 		do {
+			if($totalRows > 0) {
 ?>
-			<p>
-				<?php =$line['nome'] ?>
+			<p> 
+					<?=$line['nome'] ?>
 			</p>
 <?php
+			}
 		} while($line = mysqli_fetch_assoc($rs));
-	}
+	
 ?>
 </body>
 </html>
